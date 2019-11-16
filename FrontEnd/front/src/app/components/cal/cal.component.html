@@ -1,0 +1,25 @@
+<div align="center" class="calculator">
+    <div>
+        <input type="text" value={{num1}} readonly="true">
+        <input type="text" value={{inputText}} readonly="true">
+        <mat-grid-list cols="2" rowHeight="50px" rowWidth="40px">
+            <mat-grid-tile *ngFor="let button of button5">
+                <button mat-flat-button color="primary" (click)="onclickso(button)">{{button}}</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="4" rowHeight="50px">
+            <mat-grid-tile *ngFor="let button of button4">
+                <button mat-stroked-button (click)="onclickso(button)" witdh="95px">{{button}}</button>
+            </mat-grid-tile>
+            <mat-grid-tile *ngFor="let button of button3">
+                <button mat-stroked-button (click)=" onclickso(button)">{{button}}</button>
+            </mat-grid-tile>
+            <mat-grid-tile *ngFor="let button of button2">
+                <button mat-stroked-button (click)="onclickso(button)">{{button}}</button>
+            </mat-grid-tile>
+            <mat-grid-tile *ngFor="let button of button1">
+                <button mat-stroked-button (click)="onclickso(button)">{{button}}</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>
